@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 8%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid #d4af37;
+}
+
+.logo {
+
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-main {
+    color: #d4af37;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo-sub {
+    color: white;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+  font-weight: bold;
+}
+
+.nav-btn {
+  background: #d4af37;
+  color: #111;
+  padding: 10px 16px;
+  border-radius: 25px;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("images/BEFOREAFTER1.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 8% 60px;
+}
+
+.hero-overlay {
+  max-width: 950px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  color: #d4af37;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.trusted {
+  color: #d4af37;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.gold {
+  background: #d4af37;
+  color: #111;
+}
+
+.dark {
+  background: #111;
+  color: white;
+  border: 2px solid #d4af37;
+}
+
+.badges {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #d4af37;
+  color: #111;
+  text-align: center;
+  font-weight: bold;
+}
+
+.badges div {
+  padding: 20px;
+  border-right: 1px solid #111;
+}
+
+.section {
+  padding: 80px 8%;
+  text-align: center;
+  background: #fff;
+  color: #111;
+}
+
+.section h2 {
+  font-size: 38px;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.section-text {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  color: #d4af37;
+  padding: 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  border: 1px solid #d4af37;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: #d4af37;
+  color: #111;
+}
+
+.dark-section {
+  background: #111;
+  color: white;
+}
+
+.dark-section h2 {
+  color: #d4af37;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 14px;
+  border: 3px solid #d4af37;
+}
+
+.about p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.contact {
+  background: #d4af37;
+  color: #111;
+}
+
+.contact-box {
+  background: #111;
+  color: white;
+  max-width: 700px;
+  margin: 30px auto 0;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.contact-box a {
+  color: #d4af37;
+}
+
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 12px;
+  }
+
+  nav a {
+    margin: 8px;
+    display: inline-block;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .badges,
+  .cards,
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
