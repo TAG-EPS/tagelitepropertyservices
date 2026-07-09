@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tag Elite Property Services LLC</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#000;color:white}
+a{text-decoration:none;color:inherit}
+
+:root{
+  --gold:#d4af37;
+  --bright:#ffd76a;
+  --black:#000;
+  --dark:#080808;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:#000;
+  border-bottom:2px solid var(--gold);
+  padding:18px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.logo{
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:36px;
+  font-weight:bold;
+  letter-spacing:2px;
+  text-shadow:0 0 18px rgba(212,175,55,.45);
+}
+
+.logo span{
+  display:block;
+  color:white;
+  font-size:12px;
+  letter-spacing:4px;
+}
+
+nav a{
+  margin:0 12px;
+  font-weight:bold;
+  font-size:14px;
+}
+
+nav a:hover{color:var(--bright)}
+
+.call{
+  border:1px solid var(--gold);
+  padding:12px 18px;
+  color:var(--bright);
+  font-weight:bold;
+}
+
+.hero{
+  min-height:760px;
+  background:
+    linear-gradient(to right,rgba(0,0,0,.96),rgba(0,0,0,.68),rgba(0,0,0,.15)),
+    url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=90");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  padding:80px 6%;
+  border-bottom:5px solid var(--gold);
+}
+
+.hero div{max-width:700px}
+
+.badge{
+  color:var(--bright);
+  letter-spacing:3px;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+h1{
+  font-family:Georgia,serif;
+  font-size:68px;
+  line-height:1.05;
+}
+
+.gold{color:var(--gold)}
+
+.hero p{
+  margin:25px 0;
+  font-size:19px;
+  line-height:1.8;
+}
+
+.btn{
+  display:inline-block;
+  padding:16px 28px;
+  margin:8px 10px 8px 0;
+  font-weight:bold;
+}
+
+.gold-btn{
+  background:linear-gradient(135deg,#b8860b,#ffd76a,#d4af37);
+  color:#000;
+}
+
+.outline-btn{
+  border:1px solid var(--gold);
+  color:white;
+}
+
+section{padding:75px 6%}
+
+.title{text-align:center;margin-bottom:45px}
+
+.title small{
+  color:var(--bright);
+  letter-spacing:3px;
+  font-weight:bold;
+}
+
+.title h2{
+  font-family:Georgia,serif;
+  font-size:44px;
+  margin-top:10px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#090909;
+  border:1px solid var(--gold);
+  padding:35px 25px;
+  text-align:center;
+  box-shadow:0 0 22px rgba(212,175,55,.18);
+}
+
+.icon{
+  font-size:42px;
+  color:var(--bright);
+  margin-bottom:18px;
+}
+
+.card h3{
+  font-family:Georgia,serif;
+  margin-bottom:14px;
+}
+
+.card p{
+  color:#ddd;
+  line-height:1.7;
+}
+
+.dark-section{
+  background:#070707;
+  border-top:1px solid var(--gold);
+  border-bottom:1px solid var(--gold);
+}
+
+.info{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+
+.info h2{
+  color:var(--gold);
+  font-family:Georgia,serif;
+  margin-bottom:18px;
+}
+
+.info p{
+  line-height:1.8;
+  margin-bottom:10px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.photo{
+  min-height:240px;
+  border:2px solid var(--gold);
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  box-shadow:0 0 25px rgba(212,175,55,.25);
+}
+
+.photo span{
+  position:absolute;
+  bottom:15px;
+  left:15px;
+  background:linear-gradient(135deg,#b8860b,#ffd76a,#d4af37);
+  color:#000;
+  padding:10px 18px;
+  font-weight:bold;
+}
+
+.before1{
+  background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),url("https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=900&q=80");
+}
+
+.after1{
+  background-image:url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80");
+}
+
+.property1{
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80");
+}
+
+.before2{
+  background-image:url("https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80");
+}
+
+.after2{
+  background-image:url("https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=80");
+}
+
+.property2{
+  background-image:url("https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=80");
+}
+
+.quote{
+  background:
+  linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),
+  url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=90");
+  background-size:cover;
+  background-position:center;
+}
+
+form{
+  max-width:720px;
+  margin:auto;
+  display:grid;
+  gap:15px;
+}
+
+input,textarea{
+  padding:16px;
+  background:#090909;
+  border:1px solid var(--gold);
+  color:white;
+  font-size:16px;
+}
+
+textarea{height:140px}
+
+button{
+  padding:16px;
+  background:linear-gradient(135deg,#b8860b,#ffd76a,#d4af37);
+  color:#000;
+  border:none;
+  font-weight:bold;
+  font-size:16px;
+}
+
+footer{
+  text-align:center;
+  padding:40px 6%;
+  border-top:2px solid var(--gold);
+  background:#000;
+}
+
+footer p{margin-top:12px}
+
+@media(max-width:850px){
+  h1{font-size:44px}
+  header{text-align:center;justify-content:center}
+  nav{margin:15px 0}
+  nav a{display:inline-block;margin:7px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    TAG ELITE
+    <span>PROPERTY SERVICES LLC</span>
+  </div>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#services">SERVICES</a>
+    <a href="#about">ABOUT</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#quote">QUOTE</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <a class="call" href="tel:8636648277">📞 (863) 664-8277</a>
+</header>
+
+<div class="hero" id="home">
+  <div>
+    <p class="badge">RELIABLE. PROFESSIONAL. ELITE.</p>
+    <h1>PROPERTY SERVICES<br><span class="gold">DONE THE ELITE WAY.</span></h1>
+    <p>
+      Tag Elite Property Services LLC works with homeowners, real estate agents,
+      investors, landlords, and property managers to help keep properties clean,
+      maintained, and ready.
+    </p>
+    <a class="btn gold-btn" href="#quote">GET A FREE QUOTE</a>
+    <a class="btn outline-btn" href="tel:8636648277">CALL (863) 664-8277</a>
+  </div>
+</div>
+
+<section id="services">
+  <div class="title">
+    <small>WHAT WE DO</small>
+    <h2>Our Services</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🏠</div>
+      <h3>Property Cleanouts</h3>
+      <p>Cleanout services for homes, rentals, investment properties, and real estate listings.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <h3>Property Maintenance</h3>
+      <p>General property upkeep to help keep your home or investment property looking its best.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">✨</div>
+      <h3>Move-In / Move-Out Help</h3>
+      <p>Helping properties get cleaned, cleared, and ready for the next owner, renter, or showing.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📈</div>
+      <h3>Real Estate Ready</h3>
+      <p>Support for agents, investors, and homeowners preparing a property for market.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="about">
+  <div class="info">
+    <div>
+      <h2>About Tag Elite</h2>
+      <p>
+        At Tag Elite Property Services LLC, our mission is simple — deliver high-quality,
+        dependable property services with professionalism and integrity.
+      </p>
+      <p>We treat every property like it is our own.</p>
+    </div>
+
+    <div>
+      <h2>Who We Serve</h2>
+      <p>🏡 Homeowners</p>
+      <p>👤 Real Estate Agents</p>
+      <p>🏢 Investors</p>
+      <p>🔑 Landlords & Property Managers</p>
+    </div>
+
+    <div>
+      <h2>Why Choose Us</h2>
+      <p>✔ Dependable service</p>
+      <p>✔ Professional results</p>
+      <p>✔ Attention to detail</p>
+      <p>✔ Property-ready solutions</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="title">
+    <small>WHAT CLIENTS SAY</small>
+    <h2>Testimonials</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <p>“Professional, reliable, and easy to work with.”</p>
+      <h3>- Homeowner</h3>
+    </div>
+
+    <div class="card">
+      <p>“They helped get the property cleaned up and ready quickly.”</p>
+      <h3>- Property Owner</h3>
+    </div>
+
+    <div class="card">
+      <p>“Great communication and dependable service.”</p>
+      <h3>- Real Estate Client</h3>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="title">
+    <small>GET STARTED</small>
+    <h2>Request a Free Quote</h2>
+  </div>
+
+  <form action="mailto:tagelitiepropertyservices@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="tel" name="Phone" placeholder="Your Phone Number">
+    <input type="email" name="Email" placeholder="Your Email">
+    <textarea name="Message" placeholder="Tell us about your project"></textarea>
+    <button type="submit">SEND REQUEST</button>
+  </form>
+</section>
+
+<section class="dark-section" id="contact">
+  <div class="title">
+    <small>CONTACT US</small>
+    <h2>Tag Elite Property Services LLC</h2>
+  </div>
+
+  <div class="card">
+    <p>📞 <a href="tel:8636648277">(863) 664-8277</a></p>
+    <p>📧 <a href="mailto:tagelitiepropertyservices@gmail.com">tagelitiepropertyservices@gmail.com</a></p>
+    <p>📘 <a href="https://www.facebook.com/profile.php?id=61591563813960" target="_blank">Follow us on Facebook</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">
+    TAG ELITE
+    <span>PROPERTY SERVICES LLC</span>
+  </div>
+  <p class="gold">Reliable. Professional. Elite.</p>
+  <p>&copy; 2026 Tag Elite Property Services LLC. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
